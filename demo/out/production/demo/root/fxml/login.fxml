@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.RadioButton?>
+<BorderPane opacity="0.95" styleClass="canvas" xmlns="http://javafx.com/javafx/8.0.91"
+			xmlns:fx="http://javafx.com/fxml/1" fx:controller="root.controller.Controller">
+	
+	<top>
+		<HBox alignment="CENTER" styleClass="top_contain">
+			<Label fx:id="label_title" styleClass="label_title" text="本科生导师制结对管理系统">
+			</Label>
+		</HBox>
+	</top>
+	
+	<center>
+		<VBox fx:id="center_contain" spacing="25" styleClass="center_contain">
+			
+			<HBox alignment="center" spacing="30">
+				<Label styleClass="label_start" text="账号:" />
+				<TextField fx:id="userAccount" styleClass="textfield" promptText="请输入账号"/>
+			</HBox>
+			
+			<HBox alignment="center" spacing="30">
+				<Label styleClass="label_start" text="密码:" />
+				<PasswordField fx:id="password" styleClass="textfield"  promptText="请输入密码"/>
+			</HBox>
+			
+			<HBox alignment="center" spacing="30">
+				<Label styleClass="label_start" text="类型:" />
+				<HBox styleClass="kind" alignment="CENTER" spacing="40">
+						<RadioButton fx:id="student" text="学生"></RadioButton>
+						<RadioButton fx:id="teacher" text="教师"></RadioButton>
+						<RadioButton fx:id="manager" text="管理员"></RadioButton>
+				</HBox>
+			</HBox>
+			
+			<HBox alignment="center" prefHeight="300.0" prefWidth="1443.0" spacing="30">
+				<ImageView fx:id="image" scaleX="0.5" scaleY="0.5" translateX="-80" visible="true">
+					<image>
+						<Image url="@../image/1.gif" />
+					</image>
+				</ImageView>
+				<Label fx:id="login" alignment="CENTER" styleClass="signIn" text="Sign in" translateX="-100" />
+			</HBox>
+			
+		</VBox>
+	</center>
+	
+	<stylesheets>
+		<URL value="@../css/login.css" />
+	</stylesheets>
+</BorderPane>

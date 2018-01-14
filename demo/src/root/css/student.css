@@ -1,0 +1,197 @@
+*{
+	-fx-text-fill: #30393E;
+}
+
+.canvas{
+	-fx-alignment: center;
+	-fx-pref-width: 1216px;
+	-fx-pref-height: 768px;
+	-fx-max-width: 1216px;
+	-fx-max-height: 768px;
+	-fx-background-color: #fff;
+}
+
+
+.top_contain{
+	-fx-padding: 0 0 15 18px;
+	-fx-pref-height: 50px;
+}
+
+#refresh, #changePassword{
+	-fx-min-width: 130px;
+	-fx-alignment: center;
+	-fx-font-size: 1.5em;
+}
+#refresh:focused, #changePassword:focused{
+
+	-fx-background-color: #aaaaaa;
+	-fx-text-fill: #ffffff;
+}
+
+.teacher{
+	-fx-min-width: 130px;
+	-fx-alignment: center;
+	-fx-font-size: 1.5em;
+	-fx-background-color: #aaaaaa;
+	-fx-text-fill: #ffffff;
+}
+
+.stateLabel,#state{
+	-fx-padding: 5 5 5 5;
+	-fx-font-size: 1.5em;
+}
+
+.teacher{
+	-fx-padding: 5 5 5 5;
+	-fx-background-color: #aaa;
+	-fx-text-fill: #ffffff;
+}
+
+/*.list-cell{*/
+	/*-fx-background-color: #ffffff;*/
+	/*-fx-border-color: #aaaaaa;*/
+	/*-fx-text-fill: #30393E;*/
+	/*-fx-min-width: 200px;*/
+/*}*/
+
+/*.list-cell:hover{*/
+	/*-fx-background-color: #aaaaaa;*/
+	/*-fx-border-color: #aaaaaa;*/
+	/*-fx-text-fill: #ffffff;*/
+/*}*/
+
+#table{
+	-fx-border-width: 1px;
+	-fx-border-color: #aaaaaa;
+	-fx-background-color: #ffffff;
+}
+#table:focused{
+	-fx-border-width: 1px;
+	-fx-border-color: #aaaaaa;
+	-fx-background-color: #ffffff;
+}
+.table_container{
+	-fx-padding: 0 0 0 18;
+}
+
+.table-row-cell:selected{
+	-fx-text-fill: #fff;
+	-fx-border-width: 0px;
+	-fx-background-color: #aaaaaa;
+}
+.table-row-cell:hover{
+	-fx-background-color: #ccc;
+}
+.table-row-cell:empty .table-cell {
+	-fx-background-color: #ffffff;
+	-fx-border-width: 0px;
+}
+
+#teacher_info{
+	-fx-alignment: center;
+	-fx-border-width: 1px;
+	-fx-border-color: #aaaaaa;
+	-fx-min-width: 400px;
+	-fx-max-width: 400px;
+	-fx-min-height: 650px;
+	-fx-max-height: 650px;
+}
+
+.listContainer{
+	-fx-alignment: center;
+}
+
+#teacher_info .label{
+	-fx-min-width: 100px;
+	-fx-text-alignment: left;
+}
+
+#teacher_info_header{
+	-fx-font-weight: bold;
+	min-width:300px;
+	-fx-min-height: 30px;
+	-fx-font-size: 1.2em;
+	-fx-text-alignment: center;
+}
+
+#confirmedHeader,#notSureHeader{
+	-fx-min-width: 150px;
+	-fx-alignment: center;
+	-fx-max-width: 150px;
+}
+
+.bold{
+	-fx-font-weight: bold;
+}
+
+
+#maxNumLabel,#allNumLabel{
+	-fx-padding: 0 0 0 37;
+}
+
+#confirmed,#notSure{
+	-fx-border-width: 1px;
+	-fx-border-color: #aaaaaa;
+	-fx-background-color: #ffffff;
+	-fx-min-width: 150px;
+	-fx-max-width: 150px;
+	-fx-min-height: 430px;
+	-fx-max-height: 430px;
+}
+
+#confirmed:focused,#notSure:focused{
+	-fx-border-width: 1px;
+	-fx-border-color: #aaaaaa;
+	-fx-background-color: #ffffff;
+}
+
+
+.list-cell{
+	-fx-border-width: 1px;
+	-fx-text-fill: black;
+}
+
+.list-cell:hover{
+	-fx-border-width: 0px;
+	-fx-background-color: #ccc;
+	-fx-border-color: #aaaaaa;
+	-fx-text-fill: #ffffff;
+}
+
+.list-cell:selected{
+	-fx-border-width: 0px;
+	-fx-text-fill: #fff;
+	-fx-background-color: #aaaaaa;
+}
+
+.list-cell:empty{
+	-fx-background-color: #ffffff;
+	-fx-border-width: 0px;
+}
+
+.teacherBtn{
+	-fx-min-width: 150px;
+	-fx-max-width: 150px;
+	-fx-min-height: 30px;
+	-fx-max-height: 30px;
+}
+
+/*.button:hover{*/
+	/*-fx-background-color: #eeeeee;*/
+/*}*/
+
+.button:focused{
+	-fx-background-color: #aaaaaa;
+	-fx-text-fill: #ffffff;
+}
+
+#chooseContainer{
+	-fx-padding:  0 0 0 30;
+}
+
+#tables{
+	-fx-min-width: 724px;
+	-fx-max-width: 724px;
+	-fx-alignment: top-center;
+	-fx-max-height: 650px;
+}

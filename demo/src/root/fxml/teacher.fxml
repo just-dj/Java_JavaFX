@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Pagination?>
+<BorderPane opacity="0.95" styleClass="canvas" xmlns="http://javafx.com/javafx/8.0.91"
+			xmlns:fx="http://javafx.com/fxml/1" fx:controller="root.controller.Controller">
+	
+	<top>
+		<HBox styleClass="top_contain" spacing="30" alignment="CENTER_LEFT">
+			<Button styleClass="teacher" text="学生信息" alignment="CENTER"></Button>
+			
+			<Button text="更改密码" fx:id="changePassword"></Button>
+		</HBox>
+	</top>
+	
+	<center>
+		<HBox spacing="5" fx:id="centerContainer">
+			<VBox  styleClass="table_container">
+				<Label  styleClass="title" text="待定名单" ></Label>
+				
+				<TableView id="unsureTable" styleClass="table" ></TableView>
+			</VBox>
+			
+			<VBox spacing="100" alignment="CENTER" styleClass="actionContainer">
+				<Button fx:id="confirm" styleClass="action" text="确定"></Button>
+				<Button fx:id="out" styleClass="action" text="淘汰"></Button>
+				<Button fx:id="refresh" styleClass="action" text="刷新"></Button>
+			</VBox>
+			
+			<VBox  styleClass="table_container">
+				
+				<Label styleClass="title" text="选定名单" ></Label>
+				
+				<TableView id="confirmTable" styleClass="table" ></TableView>
+			</VBox>
+		</HBox>
+	
+	</center>
+	
+	<stylesheets>
+		<URL value="@../css/teacher.css" />
+	</stylesheets>
+</BorderPane>

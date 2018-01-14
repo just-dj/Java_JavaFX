@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Pagination?>
+<BorderPane opacity="0.95" styleClass="canvas" xmlns="http://javafx.com/javafx/8.0.91"
+			xmlns:fx="http://javafx.com/fxml/1" fx:controller="root.controller.Controller">
+	
+	<top>
+		<HBox styleClass="top_contain" spacing="30" alignment="CENTER_LEFT">
+			<Button styleClass="teacher" text="导师信息" alignment="CENTER"></Button>
+			
+			<Button text="刷新数据" fx:id="refresh"></Button>
+			
+			<Button text="更改密码" fx:id="changePassword"></Button>
+			
+			<Label styleClass="stateLabel" text="当前状态 : " alignment="CENTER_LEFT"></Label>
+			
+			<Label fx:id="state" alignment="CENTER"></Label>
+			
+			<HBox fx:id="chooseContainer" visible="false" alignment="CENTER">
+				<Label styleClass="stateLabel" text="导师名称 : "></Label>
+				<Label styleClass="stateLabel" fx:id="chooseTeacherName"></Label>
+			</HBox>
+		</HBox>
+	</top>
+	
+	<center>
+		<HBox spacing="25">
+			<HBox  styleClass="table_container">
+				<Pagination fx:id="tables">
+				
+				</Pagination>
+				<TableView id="table" maxHeight="600"></TableView>
+			</HBox>
+			
+			<VBox fx:id="teacher_info" alignment="TOP_LEFT" spacing="15" visible="false">
+				
+				<Label fx:id="teacher_info_header" ></Label>
+				
+				<HBox>
+					<Label  text="最大容量 :  " styleClass="bold" fx:id="maxNumLabel"></Label>
+					<Label fx:id="maxNum" ></Label>
+				</HBox>
+				
+				<HBox>
+					<Label text="已选择人数 :  " styleClass="bold" fx:id="allNumLabel"></Label>
+					<Label fx:id="allNum" ></Label>
+				</HBox>
+				
+				
+				<HBox styleClass="listContainer" spacing="30">
+					<VBox  spacing="15" >
+						<Label fx:id="confirmedHeader"  text="选定学生名单" styleClass="bold" alignment="CENTER"></Label>
+						<ListView  fx:id="confirmed"></ListView>
+					</VBox>
+					<VBox spacing="15">
+						<Label fx:id="notSureHeader" text="待定学生名单" styleClass="bold" alignment="CENTER"></Label>
+						<ListView fx:id="notSure"></ListView>
+					</VBox>
+				</HBox>
+			
+				<HBox spacing="30" alignment="CENTER">
+					<Button fx:id="choose" text="选择该导师" alignment="CENTER" styleClass="teacherBtn"></Button>
+					<Button fx:id="unChoose" text="退选该导师" alignment="CENTER" styleClass="teacherBtn"></Button>
+				</HBox>
+			</VBox>
+		</HBox>
+		
+	</center>
+	
+	<stylesheets>
+		<URL value="@../css/student.css" />
+	</stylesheets>
+</BorderPane>

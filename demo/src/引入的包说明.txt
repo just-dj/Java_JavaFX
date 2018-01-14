@@ -1,0 +1,18 @@
+commons-pool 实现对象池的工具
+
+DBCP(DataBase connection pool),数据库连接池。
+    依赖于commons-pool是 apache 上的一个
+     java 连接池项目，也是tomcat 使用的连接池
+     组件。
+
+Commons DbUtils是Apache组织提供的一个对
+    JDBC进行简单封装的开源工具类库，使用它
+    能够简化JDBC应用程序的开发，同时也不会
+    影响程序的性能。
+
+commons-logging 提供底层日志接口
+
+mysql-connector 数据库驱动
+
+
+

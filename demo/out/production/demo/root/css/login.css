@@ -1,0 +1,82 @@
+*{
+	-fx-text-fill: #30393E;
+}
+
+.canvas{
+	-fx-alignment: center;
+	-fx-pref-width: 1366px;
+	-fx-pref-height: 768px;
+	-fx-background-color: #fff;
+}
+
+.top_contain{
+	-fx-pref-height: 200px;
+	-fx-background-color: #eeeeee;
+}
+
+.label_title{
+	-fx-font-family: "等线 Light (标题)";
+	-fx-font-size: 3.5em;
+	-fx-alignment: center;
+}
+
+.center_contain{
+	-fx-padding: 100 0 0 0;
+	-fx-alignment: top-center;
+}
+
+
+.label_start{
+	-fx-min-width: 200px;
+	-fx-font-family: "等线 Light (标题)";
+	-fx-font-size: 1.8em;
+	-fx-text-fill: #30393E;
+	-fx-alignment: center-left;
+}
+
+.kind{
+	-fx-pref-width: 328px;
+	-fx-pref-height: 60px;
+	-fx-max-width: 328px;
+	-fx-max-height: 60px;
+	-fx-min-height: 60px;
+}
+
+.textfield{
+	 -fx-pref-width: 328px;
+	 -fx-pref-height: 60px;
+	 -fx-max-width: 328px;
+	 -fx-max-height: 60px;
+	 -fx-text-fill: #30393E;
+	 -fx-border-color:#30393E ;
+	 -fx-font-size: 30px;
+ }
+
+.signIn{
+	-fx-pref-width: 328px;
+	-fx-pref-height: 60px;
+	-fx-max-width: 328px;
+	-fx-max-height: 60px;
+	-fx-background-color:#eee ;
+	-fx-font-size: 1.8em;
+	-fx-text-fill: #30393E;
+}
+
+#image{
+	-fx-max-width: 150px;
+}
+
+.signIn:hover{
+	-fx-border-color: #30393E;
+	-fx-border-style: solid;
+	-fx-border-width: 1px;
+}
+
+.textfield:focused{
+	-fx-border-color:#30393E ;
+	-fx-background-color: #eeeeee;
+}
+
+.radio-button{
+	-fx-font-size: 1.3em;
+}
